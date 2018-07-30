@@ -1,0 +1,313 @@
+subset(flags, name='Argentina')
+subset(flags, "name"='Argentina')
+subset(flags, "name"=[Argentina])
+subset(flags, "name"=[[Argentina]])
+flags[UK]
+flags["name==UK]
+flags["name"==UK]
+flags["name"=="UK"]
+flags[name="UK"]
+flags[[name="UK"]]
+flags[[name=]]
+nex
+nxt()
+class(flags)
+cls_list <- lappy(flags, class)
+cls_list <- lapply(flags, class)
+cls_list
+class(cls_list)
+as.character(cls_list)
+??sapply
+?sapply
+sapply(flags, class)
+cls_vect <- sapply(flags, class)
+class(cls_vect)
+play
+cls_vect
+nxt()
+sum(flags$orange)
+flag_colors <- flags[, 11:17]
+head(flag_colors)
+lapply(flag_colors, sum)
+sapply(flag_colors, sum)
+sapply(flag_colors, sum/194)
+sapply(flag_colors, mean)
+flag_shapes <- flags[,19:23]
+lapply(flag_shapes, range)
+shape_mat <- sapply(flag_shapes, range)
+shape_mat
+class(shape_mat)
+unique(c(3, 4, 5, 5, 5, 6, 6))
+unique_vals <- lapply(flags, unique)
+unique_vals
+sapply(unique_vals, length)
+sapply(flags, unique)
+lapply(unique_vals, function(elem) elem[2])
+sapply(flags, unique)
+vapply(flags, unique, numeric(1))
+ok()
+sapply(flags, class)
+vapply(flags, class, character(1))
+?tapply
+table(flags$landmass)
+table(flags$animate)
+tapply(flags$animate, flags$landmass, mean)
+tapply(flags$population, flags$red, summary)
+tapply(flags$population, flags$landmass, summary)
+exit()
+exit
+quit
+quit()
+library(datasets)#
+data(iris)
+head(iris)
+sapply(iris[1], mean)
+sapply(iris, mean)
+iris[Species=virginica]
+?iris
+subset(iris, Species)
+subset(iris, Species="virginica")
+subset(iris, Species=="virginica")
+vir<-subset(iris, Species=="virginica")
+sapply(vir, mean)
+apply(iris[,1:4],1,mean)
+apply(iris[,1:4],2,mean)
+library(datasets)#
+data(mtcars)
+?mtcars
+with(mtcars, tapply(mpg, cyl, mean))
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+mean(mtcars$mpg, mtcars$cyl)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+sapply(mtcars, cyl, mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+apply(mtcars, 2, mean)
+split(mtcars, mtcars$cyl)
+lapply(mtcars, mean)
+sapply(mtcars$hp,mtcars$cyc,mean)
+sapply(split(mtcars$hp,mtcars$cyc),mean)
+sapply(split(mtcars$hp,mtcars$cyl),mean)
+sapply(split(mtcars$hp,mtcars$cyl),mean)[3]
+ahp<-sapply(split(mtcars$hp,mtcars$cyl),mean)
+ahp
+ahp[1]
+ahp[3]-ahp[1]
+debug(ls)
+ls()
+debug(ls)
+ls()
+makeVector <- function(x = numeric()) {#
+        m <- NULL#
+        set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }#
+        get <- function() x#
+        setmean <- function(mean) m <<- mean#
+        getmean <- function() m#
+        list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)#
+}
+makeVector <- function(x = numeric()) {#
+        m <- NULL#
+        set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }#
+        get <- function() x#
+        setmean <- function(mean) m <<- mean#
+        getmean <- function() m#
+        list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)#
+}
+makeVector
+makeVector()
+makeVector()
+x=1
+makeVector(x)
+makeVector()
+y<-1
+x<-1
+makeVector()
+traceback
+browser
+makeVector(x)
+makeVector(x)
+makeVector
+makeVector
+cachemean <- function(x, ...) {#
+        m <- x$getmean()#
+        if(!is.null(m)) {#
+                message("getting cached data")#
+                return(m)#
+        }#
+        data <- x$get()#
+        m <- mean(data, ...)#
+        x$setmean(m)#
+        m#
+}
+cachemean
+cachemean(x)
+dir()
+source("cachematrix.R")
+makeCacheMatrix
+makeCacheMatrix()
+source("cachematrix.R")
+makeVector
+makeVector()
+get(makeVector)
+?makeVector
+formalArgs(makeVector)
+formas(makeVector)
+formals(makeVector)
+x
+makeVector(x)
+makeVector(x=1)
+makeVector(x=1) <<- y <- 1
+jajaja <- function(x = numeric){ return x}
+jajaja <- function(x = numeric){ return x }
+jajaja <- function(x = numeric()){ return x }
+jajaja <- function( x = numeric() ){ return x }
+jajaja <- function( x = numeric() ){ x}
+jajaja(x)
+jajaja(x = 2)
+jajaja(x = "hehehe")
+y = numeric()
+y
+yget <- function() x
+get <- function() x
+get
+setmean <- function(mean) m <<- mean
+setmean
+x = numeric()
+x
+m <- NULL
+set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }
+get <- function() x
+setmean <- function(mean) m <<- mean
+getmean <- function() m
+list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)
+makeVector <- function(x = numeric()) {#
+        m <- NULL#
+        set <- function(y) {#
+                x <<- y#
+                m <<- NULL#
+        }#
+        get <- function() x#
+        setmean <- function(mean) m <<- mean#
+        getmean <- function() m#
+        list(set = set, get = get,#
+             setmean = setmean,#
+             getmean = getmean)#
+}
+cachemean <- function(x, ...) {#
+        m <- x$getmean()#
+        if(!is.null(m)) {#
+                message("getting cached data")#
+                return(m)#
+        }#
+        data <- x$get()#
+        m <- mean(data, ...)#
+        x$setmean(m)#
+        m#
+}
+x=c(1:15)
+x<-c(1:15)
+makeVector(x)
+cachemean(x)
+class(x)
+x<- as.numeric(x)
+class(x)
+makeVector(x)
+cachemean(x)
+cachemean(x)
+traceback
+tester <- function(x){x}
+tester(5)
+tester <- function(x){i; i <<- i+x; i}
+tester()
+tester(0)
+tester <- function(x); function(x){i; i <<- i+x; i}}
+tester <- function(x); i<-0; function(){i; i <<- i+x; i}}
+tester <- function(x){ i<-0; function(){i; i <<- i+x; i}}
+tester()
+tester(1)
+i
+t1 <- tester()
+t1
+t1()
+t1(0)
+t1(1)
+tester <- function(x){ i<-0; function(x){i; i <<- i+x; i}}
+t1(0)
+t1(x=0)
+t1 <- tester()
+t1(x=0)
+t1(x=4)
+t1(x=4)
+t1(x=-2)
+dir()
+source("cachematrix.R")
+x=as.numeric(c(1:25))
+x
+t1 <- makeVector()
+t1
+t1(x)
+x <- as.numeric(c(1:25))
+t1(x)
+t1 <- makeVector()
+t1(x)
+t1()
+t1(x=0)
+x <- makeVector
+x
+t2<-cachemean()
+t2<-cachemean(x)
+x=as.numeric(c(1:25))
+t2<-cachemean(x)
+t1<-makeVector(x)
+t1
+prin(t1)
+print(t1)
+x <- 1:15
+class(x)
+class(x)
+x <- as.numeric(1:15)
+myVector <- makeVector(1:15)
+myVector
+myVector$x
+myVector$m
+x
+aResult <- cachemean(1:15)
+ls()
+ls()
+myVector <- makeVector(1:15)
+source("cachematrix.R")
+myVector <- makeVector(1:15)
+source("tester.R")
+myVector <- makeVector(1:15)
+x
+aResult <- cachemean(1:15)
+myVector$get()
+myVector$getmean()
+myVector$set(30:50)
+cachemean(myVector)
+cachemean(myVector)
+aResult <- cachemean(1:10)
+myVector <- makeVector(1:10)
+aResult <- cachemean(1:10)
+aResult <- cachemean(myVector)
+aResult <- cachemean(myVector)
+myVector <- makeVector(1:10)
+myVector$get()
+aResult <- cachemean(myVector)
+myVector$getmean()
+aResult <- cachemean(myVector)
+aResult
